@@ -17,7 +17,7 @@ function generateGrid(gridSize) {
                 const line = document.querySelector("#line" + i);
                 const box = document.createElement("div");
                 box.classList.add("one-square");
-                box.style.cssText = "background: azure;";
+                box.style.cssText = "background: whitesmoke;";
                 box.addEventListener("mouseover", () => {
                     box.style.cssText = "background: black;";
                 })
