@@ -59,14 +59,12 @@ function generateGrid(gridSize) {
                 })
 
                 line.appendChild(box);
-                console.log("This function works");
             }
         }
         generateLine();
-        console.log("This function works too");
     }
 }
-generateGrid(24);
+
 
 function clearGrid() {
     while (container.firstChild) {
@@ -76,8 +74,8 @@ function clearGrid() {
 
 changeGridSize.addEventListener("click", () => {
     const playerGridSize = prompt("How many squares across would you like?");
-    if (playerGridSize > 100) {
-        alert("Grid size max is 100!");
+    if (playerGridSize > 75) {
+        alert("Grid size max is 75!");
     } else {
     generateGrid (playerGridSize);
     }
@@ -86,3 +84,5 @@ changeGridSize.addEventListener("click", () => {
 resetbtn.addEventListener("click", () => {
     generateGrid (currentGridSize);
 })
+
+generateGrid(currentGridSize);
