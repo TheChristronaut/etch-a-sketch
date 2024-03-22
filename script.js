@@ -18,9 +18,46 @@ function generateGrid(gridSize) {
                 const box = document.createElement("div");
                 box.classList.add("one-square");
                 box.style.cssText = "background: whitesmoke;";
-                box.addEventListener("mouseover", () => {
-                    box.style.cssText = "background: black;";
+
+                const redbtn = document.querySelector("#redbtn");
+                const bluebtn = document.querySelector("#bluebtn");
+                const greenbtn = document.querySelector("#greenbtn");
+                const blackbtn = document.querySelector("#blackbtn");
+                const rainbowbtn = document.querySelector("#rainbowbtn");
+
+                redbtn.addEventListener ("click", () => {
+                    box.addEventListener("mouseover", () => {
+                        box.style.cssText = "background: tomato;";
+                    })
                 })
+
+                bluebtn.addEventListener ("click", () => {
+                    box.addEventListener("mouseover", () => {
+                        box.style.cssText = "background: cornflowerblue;";
+                    })
+                })
+
+                greenbtn.addEventListener ("click", () => {
+                    box.addEventListener("mouseover", () => {
+                        box.style.cssText = "background: darkseagreen;";
+                    })
+                })
+
+                blackbtn.addEventListener ("click", () => {
+                    box.addEventListener("mouseover", () => {
+                        box.style.cssText = "background: black;";
+                    })
+                })
+
+                rainbowbtn.addEventListener ("click", () => {
+                    let redValue = Math.floor(Math.random() * 256);
+                    let greenValue = Math.floor(Math.random() * 256);
+                    let blueValue = Math.floor(Math.random() * 256);
+                    box.addEventListener("mouseover", () => {
+                        box.style.backgroundColor = 'rgb(' + redValue + ',' + greenValue + ',' + blueValue + ')';
+                    })
+                })
+
                 line.appendChild(box);
                 console.log("This function works");
             }

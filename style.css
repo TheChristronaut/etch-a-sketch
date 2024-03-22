@@ -51,6 +51,7 @@ body {
     font-weight: bolder;
     background-color: black;
     color: whitesmoke;
+    box-shadow: 0px .5vh 1vh rgb(0, 0, 0);
 }
 .color-btn:hover {
     background-color: rgb(25, 25, 25);
@@ -81,10 +82,11 @@ body {
     border: none;
     border-radius: 10vh;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: bolder;
     background-color: black;
     color: whitesmoke;
+    box-shadow: 0px .5vh 1vh rgb(0, 0, 0);
 }
 .function-btn:hover {
     background-color: rgb(25, 25, 25);
